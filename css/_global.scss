@@ -1,0 +1,71 @@
+
+:root{
+   --primary: #8a6fff;
+   --black: #030303;
+   --grey: #efeff4;
+   --white: #faf9ff;
+}
+
+p, h1,h2,h3,h4,h5,h6{
+   margin: 0;
+}
+body{
+   transition: .3s ease;
+   background: var(--white);
+}
+a{
+   color: var(--black);
+   transition: .3s;
+}
+a:hover{
+   color: var(--primary);
+}
+
+@media screen and (max-width: 768px){
+   .hide{
+      display: none;
+   }
+   
+}
+@media screen and (max-width: 992px){
+   body{
+      text-align: center;
+   }
+  
+}
+
+@media screen and (min-width: 992px){
+   .hide-mobile{
+      display: none;
+   }
+   #menu.menu-toggle{
+      display: none;
+   }
+  
+}
+
+
+// floating animation
+.floating {   
+   animation-name: floating; 
+   animation-duration: 5s; 
+   animation-iteration-count: infinite; 
+   animation-timing-function: ease-in-out; 
+} 
+.floating2 {   
+   animation-name: floating2; 
+   animation-duration: 6s; 
+   animation-iteration-count: infinite; 
+   animation-timing-function: ease-in-out; 
+} 
+ 
+@keyframes floating { 
+   0% { transform: translate(0,  0px); } 
+   50%  { transform: translate(0, 15px); } 
+   100%   { transform: translate(0, -0px); }     
+} 
+@keyframes floating2 { 
+   0% { transform: translate(0,  0px); } 
+   40%  { transform: translate(0, -20px); } 
+   100%   { transform: translate(0, -0px); }     
+} 
